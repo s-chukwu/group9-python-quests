@@ -1,0 +1,12 @@
+secret_number = 9
+guess = int(input("Guess the secret number: "))
+
+while guess != secret_number:
+    if guess < secret_number:
+        print("Too low!")
+    elif guess > secret_number:
+        print("Too high!")
+        
+    guess = int(input("Try again: "))
+
+print("You guessed it! The secret number was 9.")
